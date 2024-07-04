@@ -913,8 +913,8 @@
         if (index >= 0 && index < searchSuggestions.length) val = searchSuggestions[index]['title'];
         val = encodeURIComponent(val.trim());
         switch (engine) {
-            case 'baidu':
-                window.location = val && val.length ? 'https://www.baidu.com/#wd=' + val : 'https://www.baidu.com';
+            case 'bing':
+                window.location = val && val.length ? 'https://bing.com/search?q=' + val : 'https://bing.com';
                 break;
             case 'google':
                 window.location = val && val.length ? 'https://www.google.com/search?q=' + val : 'https://www.google.com';
@@ -922,8 +922,8 @@
             case 'sogou':
                 window.location = val && val.length ? 'https://www.sogou.com/web?query=' + val : 'https://www.sogou.com';
                 break;
-            case 'bing':
-                window.location = val && val.length ? 'https://bing.com/search?q=' + val : 'https://bing.com';
+            case 'baidu':
+                window.location = val && val.length ? 'https://www.baidu.com/#wd=' + val : 'https://www.baidu.com';
                 break;
         }
     }
@@ -1060,9 +1060,9 @@
             setJson('config', config);
         });
         favorites = getJson('favorites', [{
-            'link': 'https://www.baidu.com',
-            'title': '百度'
-        }, {'link': 'https://www.bilibili.com', 'title': '哔哩哔哩'}]);
+            'link': 'https://www.bidianer.com/iiii',
+            'title': '导航'
+        }, {'link': 'https://www.kdocs.cn/l/cvsl3tQx13fe', 'title': '会议背景'}]);
         showFavorites();
         bindSuggestion();
     });
