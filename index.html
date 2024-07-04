@@ -1059,10 +1059,10 @@
             config['engine'] = engine;
             setJson('config', config);
         });
-        favorites = getJson('favorites', [{
-            'link': 'https://www.bidianer.com/iiii',
-            'title': '导航'
-        }, {'link': 'https://www.kdocs.cn/l/cvsl3tQx13fe', 'title': '会议背景'}]);
+        favorites = getJson('favorites', [
+            {'link': 'https://www.bidianer.com/iiii', 'title': '导航'},
+            {'link': 'https://www.kdocs.cn/l/cvsl3tQx13fe', 'title': '会议背景'}
+        ]);
         showFavorites();
         bindSuggestion();
     });
